@@ -14,7 +14,7 @@ configurations {
 
 dependencies {
     agent "org.aspectj:aspectjweaver:${aspectjVersion}"
-    testCompile 'ru.yandex.qatools.allure:allure-testng-adaptor:1.4.0.RC4'
+    testCompile "ru.yandex.qatools.allure:allure-testng-adaptor:${allureVersion}"
 }
 
 
