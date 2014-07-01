@@ -1,0 +1,31 @@
+apply plugin: 'java'
+sourceCompatibility = JavaVersion.VERSION_1_7
+targetCompatibility = JavaVersion.VERSION_1_7
+version = '1.0-SNAPSHOT'
+defaultTasks 'clean', 'test'
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    agent
+}
+
+dependencies {
+    agent "org.aspectj:aspectjweaver:${aspectjVersion}"
+    testCompile 'ru.yandex.qatools.allure:allure-testng-adaptor:1.4.0.RC4'
+}
+
+
+test.doFirst {
+    jvmArgs "-javaagent:${configurations.agent.singleFile}"
+}
+
+test {
+    useTestNG() {
+        listeners << 'ru.yandex.qatools.allure.testng.AllureTestListener'
+//        suiteXmlFiles << new File(rootDir, "testng.xml") //This is how to add custom testng.xml
+    }
+}
+
