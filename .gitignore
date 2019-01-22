@@ -1,6 +1,20 @@
+.allure
+.gradle
+schema
+build
+/*/allure-results/
+out
+
+#IDEA Files
 .idea
 *.iml
-build
-.gradle
-gradle
-gradlew*
+*.ipr
+
+#Eclipse files
+*.settings
+*.classpath
+*.project
+*.pydevproject
+
+#Mac OS stuff
+.DS_Store
