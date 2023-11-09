@@ -1,21 +1,5 @@
-# Allure Gradle TestNG Example
+# Example
 
-This example demonstrates how to use Allure [TestNG](http://testng.org/) adapter with [Gradle](http://www.gradle.org/) build tool.
+Example of Allure Report usage with TestNG, Kotlin and Gradle
 
-## Usage
-
-To launch this example install Gradle and run the following command from the root directory:
-
-```bash
-$ ./gradlew build
-```
-
-You should see failed tests and generated Allure Results files in **build/allure-results** directory.
-
-In order to generate the report run:
-
-```bash
-$ ./gradlew allureReport
-```
-
-The report will be generated to **build/reports/allure-report** folder.
+The generated report is available here: [https://allure-examples.github.io/testng-kotlin-gradle](https://allure-examples.github.io/testng-kotlin-gradle/)
