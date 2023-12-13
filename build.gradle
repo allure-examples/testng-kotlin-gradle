@@ -1,9 +1,9 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.9.20'
+    id 'org.jetbrains.kotlin.jvm' version '1.9.21'
 }
 
 wrapper {
-    gradleVersion = '8.4'
+    gradleVersion = '8.5'
 }
 
 repositories {
@@ -13,9 +13,9 @@ repositories {
 group = 'com.example.testng'
 version = '1.0-SNAPSHOT'
 
-def allureVersion = '2.24.0'
-def aspectJVersion = '1.9.20.1'
-def kotlinVersion = '1.9.20'
+def allureVersion = '2.25.0'
+def aspectJVersion = '1.9.21'
+def kotlinVersion = '1.9.21'
 
 kotlin {
     jvmToolchain(21)
