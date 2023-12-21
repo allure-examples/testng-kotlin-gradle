@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Dec 21 14:30:24 GMT 2023","Thu Dec 21 14:30:24 GMT 2023","58","Gradle suite","Gradle test","com.example.testng.StepTest","com.example.testng.StepTest","test with annotation steps","test with annotation steps",""
+"passed","Thu Dec 21 14:30:24 GMT 2023","Thu Dec 21 14:30:24 GMT 2023","5","Gradle suite","Gradle test","com.example.testng.StepTest","com.example.testng.StepTest","test with lambda steps","test with lambda steps",""
