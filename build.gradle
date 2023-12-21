@@ -1,5 +1,5 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.9.21'
+    id 'org.jetbrains.kotlin.jvm' version '1.9.22'
 }
 
 wrapper {
@@ -15,7 +15,7 @@ version = '1.0-SNAPSHOT'
 
 def allureVersion = '2.25.0'
 def aspectJVersion = '1.9.21'
-def kotlinVersion = '1.9.21'
+def kotlinVersion = '1.9.22'
 
 kotlin {
     jvmToolchain(21)
