@@ -1,9 +1,9 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.9.23'
+    id 'org.jetbrains.kotlin.jvm' version '1.9.25'
 }
 
 wrapper {
-    gradleVersion = '8.7'
+    gradleVersion = '8.10.2'
 }
 
 repositories {
@@ -13,9 +13,9 @@ repositories {
 group = 'com.example.testng'
 version = '1.0-SNAPSHOT'
 
-def allureVersion = '2.26.0'
+def allureVersion = '2.29.0'
 def aspectJVersion = '1.9.22'
-def kotlinVersion = '1.9.23'
+def kotlinVersion = '1.9.25'
 
 kotlin {
     jvmToolchain(21)
@@ -35,12 +35,12 @@ dependencies {
     testImplementation "org.jetbrains.kotlin:kotlin-stdlib"
     testImplementation "org.jetbrains.kotlin:kotlin-test-testng"
 
-    testImplementation "org.testng:testng:7.9.0"
+    testImplementation "org.testng:testng:7.10.2"
     
     testImplementation platform("io.qameta.allure:allure-bom:$allureVersion")
     testImplementation "io.qameta.allure:allure-testng"
 
-    testImplementation "org.slf4j:slf4j-simple:2.0.12"
+    testImplementation "org.slf4j:slf4j-simple:2.0.16"
 }
 
 test {
